@@ -123,6 +123,7 @@
         .bottom-txt{font-weight:700;font-size:26px;text-align:center;margin-top:40px;}
         .bottom-txt br{display:none;}
         .center-box br{display:none;}
+        .space{display:none;}
 
         /* portfolio style */
         .portfolio{position:relative;margin-bottom:150px;}
@@ -156,7 +157,7 @@
             /* .wrap{margin:0 20px;} */
         }
         @media (max-width:1199px) {
-            .container{margin:0 20px;}
+            /* .container{margin:0 20px;} */
 
             .back-img picture{padding:0 50px;}
 
@@ -169,13 +170,14 @@
             .my-img-box img{width:80%;}
             .center-box{margin-left:0;}
             .center-box br{display:block;}
+            .contents-box{justify-content:center;}
         }
         @media (max-width:767px) {
 
             /* header style */
             .txt-box{width:260px;}
             .header-txt{font-size:40px;line-height:40px;}
-            .header-sub-txt{font-size:22px;line-height:25px;}
+            .header-sub-txt{font-size:22px;line-height:25px;text-align:center;}
             .back-img picture{padding:0;}
             .top-nav ul{width:90%}
             .top-nav .logo{display:none;}
@@ -192,11 +194,25 @@
             /* port style */
             .portfolio::after{content:'';display:block;width:100%;height:880px;background-color:#f8f9fa;position:absolute;left:0;right:0;top:400px;z-index:-99;}
             .container{margin:0;}
-            .swiper-wrapper{height:120vw;}
+            .swiper-wrapper{height:100vw;}
             .design-box1{margin:0 auto;}
 
             /* footer style */
             .bottom-txt br{display:block;}
+        }
+        @media (max-width:495px) {
+            .swiper-wrapper{height:120vw;}
+            .space{display:block;}
+            .bottom-txt span{display:none;}
+        }
+        @media (max-width:365px) {
+            .career-box{width:97%;}
+            .skill{width:90%;}
+            .skill-name li{font-size:11px;}
+            .skill-box .box-name{text-align:center;}
+        }
+        @media (max-width:319px) {
+            .wrap{display:none;}
         }
         
     </style>
@@ -288,7 +304,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bottom-txt">#바다같이_넓은마음 #시원한<br>#깔끔한 #꼼꼼한 #다영</div>
+                <div class="bottom-txt">#바다같이_넓은마음<br class="space"> #시원한<br>#깔끔한 #꼼꼼한 <span>#다영</span></div>
             </div>
         </section>
         <section class="portfolio" id="portfolio">
