@@ -69,12 +69,11 @@
         
         /* header style */
         header{width:100%;height:100vh;position:relative;}
-        /* header::after{content:'';display:block;width:80%;height:600px;left:10%;right:10%;bottom:-400px;position:absolute;background-color:rgba(233, 245, 246, .5);z-index:-99;} */
         .header .container{max-width:none;}
         .logo{font-weight:800;font-size:30px;}
         .back-img picture img{width:100%;height:100vh;position:absolute;right:0;top:0;bottom:0;filter:grayscale(0.7);}
         .txt-box{opacity:0;display:flex;flex-flow:column wrap;justify-content:center;align-items:center;width:600px;height:425px;border:2px solid #fff;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;box-shadow:5px 5px #fff;}
-        .txt-box.active{animation:ani 3s 0.5s;animation-fill-mode:forwards;}
+        .txt-box.active{animation:ani 2s 0.5s;animation-fill-mode:forwards;}
         @keyframes ani {
             0%{opacity:0;}
             25%{opacity:0.25;}
@@ -147,13 +146,17 @@
         .slide-txt{text-align:center;}
         .btn-box{display:flex;justify-content:center;margin-top:10px;}
         .img-box img{border-radius:20px;}
-        .site-btn{display:flex;justify-content:center;align-items:center;width:130px;height:30px;padding-bottom:4px;border-radius:10px;background-color:#333;color:#fff;}
+        .site-btn{display:flex;justify-content:center;align-items:center;width:130px;height:30px;padding-bottom:3px;border-radius:10px;background-color:#333;color:#fff;}
         .btn-box .site-btn:nth-child(1){margin-right:5px;}
         h3{margin-top:10px;font-weight:600;font-size:1.3em;}
         .contents-box{display:flex;flex-flow:row wrap;justify-content:space-between;}
         .btn-modal{width:100px;height:30px;border-radius:10px;margin:0 auto;padding-top:3px;background-color:#333;display:flex;justify-content:center;}
         .btn-modal a{color:#fff;}
-
+        .design-img-box{position:relative;margin-bottom:20px;}
+        .background{border-radius:20px;position:absolute;left:0;right:0;bottom:0;top:0;font-size:0;background-color:rgb(51, 97, 119, 0);transition:0.3s;}
+        .design-img-box:hover .background{background-color:rgb(51, 97, 119, 0.3);}
+        .box-txt{position:absolute;left:0;right:0;top:0;bottom:0;text-align:center;font-size:0;color:#fff;display:flex;align-items:flex-end;justify-content:center;text-shadow:2px 2px #333;padding-bottom:10px;transition:0.2s;}
+        .design-img-box:hover .box-txt{font-size:24px;}
 
         /* contact style */
         .contact{margin-bottom:50px;}
@@ -336,7 +339,7 @@
                                 </div>
                                 <div class="slide-txt">
                                     <h3>아누아</h3>
-                                    <p>Pc web</p>
+                                    <p>Responsive web</p>
                                     <p>design renewal & publishing</p>
                                     <div class="btn-box">
                                         <div class="site-btn">
@@ -397,7 +400,7 @@
                             <div class="inner-box">
                                 <div class="slide-image">
                                     <div class="img-box">
-                                        <img src="./images/megabox.png" alt="한솔제지">
+                                        <img src="./images/hansol.png" alt="한솔제지">
                                     </div>
                                 </div>
                                 <div class="slide-txt">
@@ -424,19 +427,37 @@
                     <div class="sub-name">Design</div>
                     <div class="contents-box">
                         <div class="design-box1">
-                            <img src="./images/benefit-design.png" alt="베네피트 디자인">
+                            <div class="design-img-box">
+                                <img src="./images/benefit-design.png" alt="베네피트 디자인">
+                                <div class="background">색상</div>
+                                <div class="box-txt">
+                                    베네피트<br>인덱스 페이지<br>리뉴얼
+                                </div>
+                            </div>
                             <p class="btn-modal"><a href="#modal1" rel="modal:open">View</a></p>
                         </div>
                         <div class="design-box1">
-                            <img src="./images/anua-design.png" alt="아누아 디자인">
+                            <div class="design-img-box">
+                                <img src="./images/anua-design.png" alt="아누아 디자인">
+                                <div class="background">색상</div>
+                                <div class="box-txt">
+                                    아누아<br>인덱스 페이지<br>리뉴얼
+                                </div>
+                            </div>
                             <p class="btn-modal"><a href="#modal2" rel="modal:open">View</a></p>
                         </div>
                         <div class="design-box1">
-                            <img src="./images/benefit-design.png" alt="베네피트 디자인">
-                            <p class="btn-modal"><a href="#modal1" rel="modal:open">View</a></p>
+                            <div class="design-img-box">
+                                <img src="./images/zara-design.png" alt="자라 디자인">
+                                <div class="background">색상</div>
+                                <div class="box-txt">
+                                    자라<br>인덱스 페이지<br>리뉴얼
+                                </div>
+                            </div>
+                            <p class="btn-modal"><a href="#modal3" rel="modal:open">View</a></p>
                         </div>
                         <div class="design-box1">
-                            <img src="./images/benefit-design.png" alt="베네피트 디자인">
+                            <img src="./images/notyet.png" alt="작업중">
                             <p class="btn-modal"><a href="#modal1" rel="modal:open">View</a></p>
                         </div>
                     </div>
@@ -456,7 +477,8 @@
                 </div>
                 <div class="footer-txt">
                     Copyrightⓒ2021.kimdayoung.All rights reserved.<br>
-                    본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.
+                    본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.<br>
+                    사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.
                 </div>
             </div>
         </section>
@@ -469,6 +491,12 @@
         <div id="modal2" class="modal">
             <div class="modal-container">
                 <img src="./images/anua-home.png" alt="">
+                <a href="#" rel="modal:close"></a>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-container">
+                <img src="./images/zara-home.jpg" alt="">
                 <a href="#" rel="modal:close"></a>
             </div>
         </div>
