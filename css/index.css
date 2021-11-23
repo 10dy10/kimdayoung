@@ -26,7 +26,7 @@ img{vertical-align:top;width:100%;}
 .short-line2{margin-bottom:90px;}
 
 
-.top-nav{width:100%;height:100px;position:fixed;left:0;top:0;display:flex;justify-content: center;z-index:9999;background-color:transparent;color:#fff;}
+.top-nav{width:100%;height:100px;position:fixed;left:0;top:0;display:flex;justify-content: center;z-index:9999;background-color:transparent;color:#fff;transition:0.5s;}
 .top-nav ul{width:45%;height:100px;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;}
 .top-nav ul li:hover a{font-size:1.2em;color:#999;}
 
@@ -83,22 +83,21 @@ header{width:100%;height:100vh;position:relative;}
 .skill li{color:#fff;}
 .box li{margin-bottom:6px;}
 .line {padding:2px 200px 2px 20px;border:1px solid #ddd;margin-right:22px;position:relative;height:22px;}
-.line:before {content:'';width:90%;position:absolute;left:0;height:22px;}
-.line:after {content:'';transition:0.8s;display:block;width:100%;animation:animate 1 5s;position:absolute;top:0;left:0;z-index:-1;height:21px;}
+.line::before {content:'';width:90%;position:absolute;left:0;height:22px;}
+.line::after {content:'';transition:0.8s;display:block;width:100%;animation:animate 1 5s;position:absolute;top:0;left:0;z-index:-1;height:21px;}
 @keyframes animate {
     0% {width:0;}
     100% {width:100%;}
 }
-.line1:after {max-width:80%;background:#1a759f;}
-.line2:after {max-width:70%;background:#1a759f;}
-.line3:after {max-width:80%;background:#1a759f;}
-.line4:after {max-width:80%;background:#1a759f;}
-.line5:after {max-width:65%;background:#1a759f;}
-.line6:after {max-width:90%;background:#1a759f;}
+.line::after{background:#1a759f;}
+.line1:after{max-width:80%;}
+.line2:after{max-width:70%;}
+.line3:after{max-width:80%;}
+.line4:after{max-width:80%;}
+.line5:after{max-width:65%;}
+.line6:after{max-width:90%;}
 .bottom-txt{font-weight:700;font-size:26px;text-align:center;margin-top:40px;}
-.bottom-txt br{display:none;}
-.center-box br{display:none;}
-.space{display:none;}
+.bottom-txt br,.center-box br,.space{display:none;}
 
 /* portfolio style */
 .portfolio{position:relative;margin-bottom:150px;padding:100px 0;background:#f8f9fa;}
@@ -113,7 +112,7 @@ header{width:100%;height:100vh;position:relative;}
 .img-box img{border-radius:20px;}
 .site-btn{display:flex;justify-content:center;align-items:center;width:130px;height:30px;padding-bottom:3px;border-radius:10px;background-color:#333;color:#fff;}
 .btn-box .site-btn:nth-child(1){margin-right:5px;}
-h3{margin-top:10px;font-weight:600;font-size:1.3em;}
+h3{margin-top:10px;font-weight:600;font-size:18px;}
 .contents-box{display:flex;flex-flow:row wrap;justify-content:space-between;}
 .btn-modal{width:100px;height:30px;border-radius:10px;margin:0 auto;padding-top:3px;background-color:#333;display:flex;justify-content:center;}
 .btn-modal a{color:#fff;}
@@ -121,7 +120,7 @@ h3{margin-top:10px;font-weight:600;font-size:1.3em;}
 .background{border-radius:20px;position:absolute;left:0;right:0;bottom:0;top:0;font-size:0;background-color:rgb(51, 97, 119, 0);transition:0.3s;}
 .design-img-box:hover .background{background-color:rgb(51, 97, 119, 0.3);}
 .box-txt{position:absolute;left:0;right:0;top:0;bottom:0;text-align:center;font-size:0;color:#fff;display:flex;align-items:flex-end;justify-content:center;text-shadow:2px 2px #333;padding-bottom:10px;transition:0.2s;}
-.design-img-box:hover .box-txt{font-size:24px;}
+.design-img-box:hover .box-txt{font-size:18px;}
 
 /* contact style */
 .contact{margin-bottom:50px;}
@@ -130,7 +129,7 @@ h3{margin-top:10px;font-weight:600;font-size:1.3em;}
 .e-mail{text-align:center;margin-bottom:200px;}
 
 /* modal style */
-.modal{left:0;right:0;top:120px;bottom:0;background-color:rgba(0,0,0,.4);display:none;}
+.modal{top:120px;background-color:rgba(0,0,0,.4);}
 
 
 
@@ -177,8 +176,6 @@ h3{margin-top:10px;font-weight:600;font-size:1.3em;}
     /* footer style */
     .bottom-txt br{display:block;}
 
-    /* .modal{top:120px;} */
-
 }
 @media (max-width:495px) {
     .swiper-wrapper{height:120vw;}
@@ -194,4 +191,3 @@ h3{margin-top:10px;font-weight:600;font-size:1.3em;}
 @media (max-width:319px) {
     .wrap{display:none;}
 }
-        
