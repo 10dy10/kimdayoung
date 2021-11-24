@@ -17,10 +17,10 @@ $(function(){
 
         // 스킬 애니메이션 효과
         if($(document).scrollTop()>400) {
-            $(".skill>li").each(function(j){
+            $(".skill>li").each(function(e){
                 setTimeout(function(){
-                    $(".skill>li").eq(j).addClass("line");
-                }, j * 500 );
+                    $(".skill>li").eq(e).addClass("line");
+                }, e * 500 );
             });
         }
     })
@@ -41,6 +41,9 @@ $(function(){
                 spaceBetween: 10,
             }
         },
+        autoplay: {
+            delay: 3000,
+        },
         loop: true,
         pagination: {
         el: ".swiper-pagination",
@@ -56,6 +59,7 @@ $(function(){
     // AOS
     AOS.init();
 
+    // index text 애니메이션 효과
     let mainTxt = document.querySelector('.txt-box');
     setTimeout(function(){
         mainTxt.classList.add('active');
