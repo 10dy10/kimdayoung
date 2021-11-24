@@ -37,7 +37,7 @@ header{width:100%;height:100vh;position:relative;}
 .logo{font-weight:800;font-size:30px;}
 .back-img picture img{width:100%;height:100vh;position:absolute;right:0;top:0;bottom:0;filter:grayscale(0.7);}
 .txt-box{opacity:0;display:flex;flex-flow:column wrap;justify-content:center;align-items:center;width:600px;height:425px;border:2px solid #fff;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;box-shadow:5px 5px #fff;}
-.txt-box.active{animation:ani 2s 0.5s;animation-fill-mode:forwards;}
+.txt-box.active{animation:ani 1s 0.5s;animation-fill-mode:forwards;}
 @keyframes ani {
     0%{opacity:0;}
     25%{opacity:0.25;}
@@ -82,7 +82,7 @@ header{width:100%;height:100vh;position:relative;}
 .skill li{color:#fff;}
 .box li{margin-bottom:6px;}
 .line {padding:2px 200px 2px 20px;border:1px solid #ddd;margin-right:22px;position:relative;height:22px;}
-.line::before {content:'';width:100%;position:absolute;left:0;height:22px;}
+.line::before {content:'';position:absolute;left:0;height:22px;}
 .line::after {content:'';transition:0.8s;display:block;width:100%;animation:animate 1 5s;position:absolute;top:0;left:0;z-index:-1;height:21px;}
 @keyframes animate {
     0% {width:0;}
