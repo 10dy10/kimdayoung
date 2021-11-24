@@ -82,7 +82,7 @@ header{width:100%;height:100vh;position:relative;}
 .skill li{color:#fff;}
 .box li{margin-bottom:6px;}
 .line {padding:2px 200px 2px 20px;border:1px solid #ddd;margin-right:22px;position:relative;height:22px;}
-.line::before {content:'';position:absolute;left:0;height:22px;}
+.line::before {content:'';;position:absolute;left:0;height:22px;}
 .line::after {content:'';transition:0.8s;display:block;width:100%;animation:animate 1 5s;position:absolute;top:0;left:0;z-index:-1;height:21px;}
 @keyframes animate {
     0% {width:0;}
@@ -188,6 +188,7 @@ h3{margin-top:10px;font-weight:600;font-size:18px;}
     .career-box{width:97%;}
     .skill{width:90%;}
     .skill-name li{font-size:11px;}
+    .skill-name li:first-child{margin-bottom:10px;}
     .skill-box .box-name{text-align:center;}
 }
 @media (max-width:319px) {
