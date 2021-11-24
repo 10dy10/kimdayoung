@@ -179,8 +179,10 @@ h3{margin-top:10px;font-weight:600;font-size:18px;}
     .space{display:block;}
     .bottom-txt span{display:none;}
     .site-btn{padding-bottom:2px;}
+    .btn-modal{padding-top:6px;}
 }
 @media (max-width:365px) {
+    #modal1{top:48px;}
     .career-box{width:97%;}
     .skill{width:90%;}
     .skill-name li{font-size:11px;}
