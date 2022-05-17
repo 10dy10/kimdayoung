@@ -49,12 +49,6 @@ $(function () {
     },
   });
 
-  // 스무스 스크롤
-  // var scroll = new SmoothScroll('a[href*="#"]', {
-  //   speed: 800,
-  //   easing: "easeInOutCubic",
-  // });
-
   // AOS
   AOS.init();
 
