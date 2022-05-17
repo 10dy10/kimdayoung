@@ -1,5 +1,3 @@
-
-
 .wrap {
   overflow: hidden;
 }
@@ -50,6 +48,12 @@
   color: #fff;
   transition: 0.5s;
 }
+.top-nav.fixed {
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  color: #333;
+}
+
 .top-nav ul {
   width: 45%;
   height: 100px;
@@ -223,10 +227,10 @@ header {
   flex-flow: column wrap;
   justify-content: space-between;
 }
-.skill {
+.skills {
   flex: 1.3;
 }
-.skill li {
+.skills li {
   color: #fff;
 }
 .box li {
