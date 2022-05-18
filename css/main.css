@@ -1,0 +1,21 @@
+.inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.back-img {
+  width: 80%;
+  height: 30%;
+  margin: auto;
+  background-image: url(../images/fall-g0eb4d22a3_1920.jpg);
+}
+.main {
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 5rem;
+  color: var(--main-color);
+}
+.main span {
+  color: var(--white);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--main-color)
+}
